@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JAVA SCRIPT-ATVs - 12/03/25</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>Funções</h1>
+    <!--QUESTÃO 1 -->
+        <script>
+       let cidade = 'jardim'
+       console.log('eu sou de ' + cidade);
+       </script>
+    <!--QUESTÃO 2-->  
+       <script>
+        function ehmaiorDeIdade(idade){
+            return idade >= 18;
+        }
+        console.log(ehmaiorDeIdade(20))//true
+        console.log(ehmaiorDeIdade(16))//false
+       </script>
+    <!--QUESTÃO 3-->
+       <script>
+        let i = 1
+        while (i<=5){
+            console.log(i);
+            i++;
+        }
+       </script>
+    <!--QUESTÃO 4-->
+       <script>
+        function somar(a,b){
+            return a+b
+        }
+        console.log(somar(3,5));
+       </script>
+    <!--QUESTÃO 5-->
+       <script>
+        function QualEhOMaiorNumero(numero1, numero2, numero3){
+            let maior = numero1;
+            if(numero2 > maior){
+                maior = numero2;
+            }if(numero3 > maior){
+                maior = numero3;
+            }
+            return maior;
+        }
+        console.log(QualEhOMaiorNumero(84, 952, 15));
+       </script>
+    <!--QUESTÃO 6-->
+       <script>
+        function salarioReajuste(salario){
+            novoSalario = salario + (salario * (1/100));
+            return novoSalario;
+        }
+        console.log(salarioReajuste(1500));
+       </script>
+    <!--QUESTÃO 7-->
+       <script>
+        function media(nota1, nota2, nota3, nota4){
+            situacao = "reprovado";
+            media = (nota1 + nota2 + nota3 + nota4)/4;
+            if(media >= 6){
+                situacao = "aprovado";
+            }
+            return situacao;
+        }
+        console.log("Situação : " + (media(6, 5, 9, 1)))
+       </script>
+</body>
+</html>
