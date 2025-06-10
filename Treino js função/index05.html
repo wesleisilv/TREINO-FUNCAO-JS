@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <!--QUESTÃO 1 - MÉDIA-->
+    <script>
+        function media(numero1,numero2,numero3){
+            var Media = (numero1+numero2+numero3)/3
+            return Media
+        }
+        console.log(media(7,8,9))
+    </script>
+    <!--QUESTÃO 2 - A e B-->
+    <script>
+        function tra(A,B){
+            var c = 0
+        if (A==B){
+            c = A+B
+            return c
+        }
+        if (A!=B){
+            c = A*B
+            return c
+        }
+        }
+        console.log(tra(6,7))
+    </script>
+    <!--QUESTÃO 3 - AUMENTO SALARIAL-->
+    <script>
+        function Aumentosalario(salario){
+            var Novosalario = salario+(salario*(10/100))
+            return Novosalario
+        }
+        console.log('salario:'+Aumentosalario(1500))
+    </script>
+    <!--QUESTÃO 4 - SOMA E MEDIA-->
+    <script>
+        function SomaAndMedia(A,B,C){
+            var soma = A+B+C
+            var media = (A+B+C)/3
+            return soma,media
+        }
+        console.log(SomaAndMedia(15,16,17))
+    </script>
+    <!--QUESTÃO 5 - NUMEROS PARES-->
+    <script>
+        for(var i=0;i<=100;i++){
+            if(i%2==0){
+                console.log(i)
+            }
+        }
+    </script>
+</body>
+</html>
